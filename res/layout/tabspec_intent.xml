@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+     
+        <!-- FrameLayout布局 ，id值不可变 -->
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           android:layout_weight="1">
+            <LinearLayout 
+                android:id="@+id/one"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <ImageView 
+                    android:scaleType="fitXY"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/one"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/two"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <ImageView 
+                    android:scaleType="fitXY"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/two"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/three"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <ImageView 
+                    android:scaleType="fitXY"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/three"/>
+            </LinearLayout>
+        </FrameLayout>
+        <!--   TabWidget的组件id值不可变 -->
+       
+         <TabWidget 
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            
+        </TabWidget>
+  </LinearLayout>
+    
+
+</TabHost>
